@@ -557,8 +557,8 @@ img {
 .footer-btn {
   font-family: "Roboto", sans-serif;
   cursor: pointer;
-  width: 165px;
-  height: 40px;
+  min-width: 165px;
+  padding: 8px 24px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -800,9 +800,11 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-fill {
-  margin-bottom: 8px;
+.modal-fill:not(:first-child) {
+  margin-top: 8px;
 }
+
+
 
 .modal-label-text {
   font-size: 12px;
